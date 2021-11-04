@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<things>
+	<parameters>
+		<experiment name="test" description=""/>
+		<scale x="330" y="330" z="330"/>
+		<offset x="0" y="0" z="0"/>
+		<time ms="1588692025412"/>
+		<activeNode id="1"/>
+		<editPosition x="4472" y="7899" z="6931"/>
+		<zoomLevel zoom="4.287177619999996"/>
+	</parameters>
+	<thing id="1" name="onlyTree" color.r="6.784314e-01" color.g="1.411765e-01" color.b="5.098039e-02" color.a="1">
+		<nodes>
+			<node id="1" radius="500.000000" x="3447" y="1579" z="2527" inVp="2" inMag="3" rotX="1588692069794.000000" rotY="0.000000" rotZ="0.000000" time="0"/>
+		</nodes>
+		<edges/>
+	</thing>
+	<comments> </comments>
+<groups />
+</things>

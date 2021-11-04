@@ -1,0 +1,26 @@
+<things>
+  <meta name="writer" content="NmlWriter.scala" />
+  <meta name="writerGitCommit" content="c7e5d99a8fdef40c06b5c2d08b0aa3f31cd0e25b" />
+  <meta name="timestamp" content="1588692083163" />
+  <meta name="annotationId" content="5eb184390100005f00259816" />
+  <meta name="username" content="Carles Bosch" />
+  <parameters>
+    <experiment name="C525b-12_mesh7" organization="Schaefer_Lab" description="" />
+    <scale x="50.0" y="50.0" z="50.0" />
+    <offset x="0" y="0" z="0" />
+    <time ms="1588692025412" />
+    <editPosition x="4472" y="7899" z="6931" />
+    <editRotation xRot="0.0" yRot="0.0" zRot="0.0" />
+    <zoomLevel zoom="4.287177619999996" />
+    <activeNode id="1" />
+  </parameters>
+  <thing id="1" color.r="0.6784313917160034" color.g="0.1411764770746231" color.b="0.05098039284348488" color.a="1.0" name="onlyTree">
+    <nodes>
+      <node id="1" radius="500.0" x="4472" y="7899" z="6931" rotX="90.0" rotY="0.0" rotZ="0.0" inVp="2" inMag="3" bitDepth="8" interpolation="true" time="1588692069794" />
+    </nodes>
+    <edges />
+  </thing>
+  <branchpoints />
+  <comments />
+  <groups />
+</things>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<things>
+	<parameters>
+		<experiment name="test" description=""/>
+		<scale x="330" y="330" z="330"/>
+		<offset x="0" y="0" z="0"/>
+		<time ms="1588692025412"/>
+		<activeNode id="4"/>
+		<editPosition x="6294" y="8392" z="6560"/>
+		<zoomLevel zoom="4.287177619999996"/>
+	</parameters>
+	<thing id="2" name="twoNodesTwoTrees" color.r="0" color.g="0" color.b="1" color.a="1">
+		<nodes>
+			<node id="3" radius="500.000000" x="3190" y="1576" z="2589" inVp="2" inMag="3" rotX="1588692512992.000000" rotY="0.000000" rotZ="0.000000" time="0"/>
+			<node id="4" radius="500.000000" x="3154" y="1539" z="2511" inVp="2" inMag="3" rotX="1588692518055.000000" rotY="0.000000" rotZ="0.000000" time="0"/>
+		</nodes>
+		<edges>
+			<edge source="3" target="4"/>
+		</edges>
+	</thing>
+	<thing id="1" name="twoNodes" color.r="6.784314e-01" color.g="1.411765e-01" color.b="5.098039e-02" color.a="1">
+		<nodes>
+			<node id="1" radius="500.000000" x="3449" y="1579" z="2527" inVp="0" inMag="3" rotX="1588692286565.000000" rotY="0.000000" rotZ="0.000000" time="0"/>
+			<node id="2" radius="500.000000" x="3466" y="1436" z="2506" inVp="2" inMag="3" rotX="1588692360108.000000" rotY="0.000000" rotZ="0.000000" time="0"/>
+		</nodes>
+		<edges>
+			<edge source="1" target="2"/>
+		</edges>
+	</thing>
+	<comments> </comments>
+<groups />
+</things>
