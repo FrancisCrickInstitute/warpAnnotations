@@ -1,5 +1,6 @@
-inputFile = '/camp/project/proj-emschaefer/working/otherUsers/berninm/matlab-pipeline/warping/carles/1-skels/C525b-12_mesh7_sourceSkel.nml';
-outputFolder = '/camp/home/berninm/';
+thisDir = fileparts(mfilename('fullpath'));
+inputFile = fullfile(thisDir, 'test_data', 'C525b-12_mesh7_sourceSkel.nml');
+outputFolder = thisDir;
 
 skEM = skeleton(inputFile);
 targets = skEM.warp_targets();

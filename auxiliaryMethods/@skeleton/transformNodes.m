@@ -5,8 +5,8 @@ if nargin < 3
 end
 
 if ~strcmp(landmark_filename, 'none')  
-    import TransformPoints2.*
-    tp = TransformPoints2();
+    import TransformPoints.*
+    tp = TransformPoints();
     if inverse
         transform_function = @(x) tp.inverse_transform(landmark_filename, x);
     else

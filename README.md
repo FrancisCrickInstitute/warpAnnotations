@@ -35,7 +35,7 @@ You can otherwise install Java and Maven using the following resources:
 * Download [Maven](https://maven.apache.org/download.cgi) and follow the [installation instructions](https://maven.apache.org/install.html)
 
 
-### 3. Pull bigwarp and all its dependencies using maven
+### 3. Compile bigwarp and get its dependencies using maven
 
 Go to the `bigwarp` folder in your repo, e.g.: `cd warping/bigwarp` and compile it:
 
@@ -63,11 +63,31 @@ either in the top level of the repo (and start Matlab from there during usage) o
 [prefdir](https://uk.mathworks.com/help/matlab/ref/prefdir.html?searchHighlight=prefdir&s_tid=srchtitle_prefdir_1)
 to make the functionality availible in Matlab permanently.
 
-This section will make bigwarp functionality useable from within Matlab. See [here](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) formore information of adding to your static Java path.
+This section will make bigwarp functionality useable from within Matlab. See [here](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) for more information of adding to your static Java path.
 
 ## Usage
 
-1. Define the scale of each dataset in `warping/data/datasets.csv`
-2. Define the parameters for each transformation between datasets in `warping/data/warpings.csv`
-3. Use a skeleton to test the warping bz running `warping/test_run.m`
+### Define the scale of each dataset in `warping/data/datasets.csv`
+
+The scale is specified in `nm` for each dimension.
+
+### Define the parameters for each transformation between datasets in `warping/data/warpings.csv`
+
+The parameters specify the following properties:
+
+- The `source_` prefix refers to the dataset which will be transformed while the `target_` prefix refers to the dataset after transformation.
+- The `mag_x`, `mag_y` and `mag_z` parameters refer to the magnification of the dataset which was used, magnification refers to levels in the webknossos resolution pyramid
+- The `offset_x`, `offset_y` and `offset_z` parameters indicate the offset in voxel if only part of the dataset was used to generate the landmarks
+- The `size_x`, `size_y` and `size_z` parmaters indicate the size of the bounding box in voxel used to fit the landmarks
+- The `flip_x`, `flip_y`, `flip_z` parameters indicate whether a version of the dataset in which a certain dimension was inverted was used
+- The `landmark` parameter specifies a csv file with landmarks exported from bigwarp to be placed in the `warping/data/landmarks` folder
+- The `weight` parameter is used if a chain of transformations is to be traversed to decide which path to take by default (the one with lowest weight)
+
+### Use a skeleton to test the warping by running a specific chain of transformations as exemplified in `warping/test_run.m`
+
+This should then warp the skeleton to the other dataset and back to the original dataset (should be indentical to the original one) as a sanity test.
+If you have specified multiple transformations you can try running multiple transformations at once as well using the `warps` function.
+Now you should be all set to transform skeletons between different webKnossos datasets as you please!
+
+If you have any questions please contact us [Manuel Berning](mailto:manuel.mb.berning@gmail.com) or [Carles Bosch](mailto:carles.bosch@crick.ac.uk)
 
