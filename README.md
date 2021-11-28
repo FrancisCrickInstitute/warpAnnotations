@@ -53,17 +53,19 @@ Rename the dependency file to `javaclasspath.txt` and change it to  matlab forma
 E.g. open it with `vim` and issue the command:
 
 ```
-:%s/:/\n/g 
+:%s/:/\r/g 
 ```
 
 This is equivalent to replacing all `:` with a newline `\n` character and can be done in any text editor.
 
-Add the path to the `warping` subfolder at the top of that same `javaclasspath.txt` file and place it 
-either in the top level of the repo (and start Matlab from there during usage) or in your
+Add the path to the `warping` as well as the `warping/bigwarp/target/classes` subfolder at the top of that same `javaclasspath.txt` file.
+The former contains a small wrapper script to use the bigwarp functionality from Matlab and the latter contains the classes generated using `mvn compile` in the bigwarp directory.
+
+Place it either in the top level of the repo (and start Matlab from there during usage) or in your
 [prefdir](https://uk.mathworks.com/help/matlab/ref/prefdir.html?searchHighlight=prefdir&s_tid=srchtitle_prefdir_1)
 to make the functionality availible in Matlab permanently.
 
-This section will make bigwarp functionality useable from within Matlab. See [here](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) for more information of adding to your static Java path.
+See [here](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) for more information of adding to your static Java path.
 
 ## Usage
 
@@ -89,5 +91,7 @@ This should then warp the skeleton to the other dataset and back to the original
 If you have specified multiple transformations you can try running multiple transformations at once as well using the `warps` function.
 Now you should be all set to transform skeletons between different webKnossos datasets as you please!
 
-If you have any questions please contact us [Manuel Berning](mailto:manuel.mb.berning@gmail.com) or [Carles Bosch](mailto:carles.bosch@crick.ac.uk)
+## Questions and feedback
+
+If you have any questions please contact us: [Manuel Berning](mailto:manuel.mb.berning@gmail.com) or [Carles Bosch](mailto:carles.bosch@crick.ac.uk)
 

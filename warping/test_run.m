@@ -1,6 +1,6 @@
 thisDir = fileparts(mfilename('fullpath'));
 inputFile = fullfile(thisDir, 'test_data', 'C525b-12_mesh7_sourceSkel.nml');
-outputFolder = thisDir;
+outputFolder = fullfile(thisDir, 'test_data');
 
 skEM = skeleton(inputFile);
 targets = skEM.warp_targets();

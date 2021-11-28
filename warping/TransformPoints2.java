@@ -9,9 +9,9 @@ import jitk.spline.ThinPlateR2LogRSplineKernelTransform;
 
 import bdv.gui.TransformTypeSelectDialog;
 
-public class TransformPoints {
+public class TransformPoints2 {
 	
-	public TransformPoints() {
+	public TransformPoints2() {
 		}
 
 	public double[][] transform(String landmarksPath, double[][] inputPoints) {
