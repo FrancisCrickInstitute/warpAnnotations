@@ -1,5 +1,17 @@
 # Warping tool in Matlab
 
+## Purpose of this repository
+
+The repository is released with this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1).
+
+The main purpose is to make the transformations between the multiple imaging datasets of a single piece of tissue 
+presented in the paper reproducible for everyone using Matlab. 
+This is achieved by including the parameters of the transformations in this repository.
+Another purpose is to allow interested individuals to use, adapt or extend this solution to their needs/datasets/formats.
+This is achieved by providing the codebase and instructions below for installation and usage.
+
+The transformations were fitted in [bigwarp](https://github.com/saalfeldlab/bigwarp) and executed using the code in this repository.
+
 ## Installation
 
 ### 1. Get latest version of this repo
