@@ -68,7 +68,7 @@ Place it either in the top level of the repo (and start Matlab from there during
 [prefdir](https://uk.mathworks.com/help/matlab/ref/prefdir.html?searchHighlight=prefdir&s_tid=srchtitle_prefdir_1)
 to make the functionality availible in Matlab permanently.
 
-See [here](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) for more information of adding to your static Java path.
+[Read more](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) about adding to your static Java path.
 
 ## Usage
 
