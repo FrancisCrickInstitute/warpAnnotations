@@ -61,7 +61,7 @@ mvn dependency:build-classpath | grep 'Dependencies classpath' -A 1 | tail -n 1 
 
 The command will automatically replace all `:` separators with a newline `\n` character for Matlab compatibility.
 
-Add the path to the `warping` as well as the `warping/bigwarp/target/classes` subfolder at the top of that same `javaclasspath.txt` file.
+Add the  full path to the `warping` as well as the `warping/bigwarp/target/classes` subfolders at the top of that same `javaclasspath.txt` file.
 The former contains a small wrapper script to use the bigwarp functionality from Matlab and the latter contains the classes generated using `mvn compile` in the bigwarp directory.
 
 Place it either in the top level of the repo (and start Matlab from there during usage) or in your
