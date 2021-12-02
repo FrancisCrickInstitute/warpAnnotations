@@ -27,9 +27,7 @@ git submodule update --recursive
 Otherwise clone the repository:
 
 ```
-git clone git@github.com:FrancisCrickInstitute/skeletonWarping.git
-cd skeletonWarping
-git submodule update --recursive --init
+git clone git@github.com:FrancisCrickInstitute/skeletonWarping.git --recursive
 ```
 
 ### 2. Install Java and Maven
@@ -58,17 +56,10 @@ mvn compile
 Create list of the dependencies of bigwarp in a file using this command:
 
 ```
-mvn dependency:build-classpath | grep 'Dependencies classpath' -A 1 | tail -n 1 > ../dep.txt
+mvn dependency:build-classpath | grep 'Dependencies classpath' -A 1 | tail -n 1 | sed 's/:/\n/g' > ../javaclasspath.txt
 ```
 
-Rename the dependency file to `javaclasspath.txt` and change it to  matlab format:
-E.g. open it with `vim` and issue the command:
-
-```
-:%s/:/\r/g 
-```
-
-This is equivalent to replacing all `:` with a newline `\n` character and can be done in any text editor.
+The command will automatically replace all `:` separators with a newline `\n` character for Matlab compatibility.
 
 Add the path to the `warping` as well as the `warping/bigwarp/target/classes` subfolder at the top of that same `javaclasspath.txt` file.
 The former contains a small wrapper script to use the bigwarp functionality from Matlab and the latter contains the classes generated using `mvn compile` in the bigwarp directory.
@@ -99,7 +90,7 @@ The parameters specify the following properties:
 
 ### Use a skeleton to test the warping by running a specific chain of transformations as exemplified in `warping/test_run.m`
 
-This should then warp the skeleton to the other dataset and back to the original dataset (should be indentical to the original one) as a sanity test.
+This should then warp the skeleton to the other dataset and back to the original dataset (should be identical to the original one) as a sanity test.
 If you have specified multiple transformations you can try running multiple transformations at once as well using the `warps` function.
 Now you should be all set to transform skeletons between different webKnossos datasets as you please!
 
