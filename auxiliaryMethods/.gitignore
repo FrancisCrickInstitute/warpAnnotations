@@ -1,0 +1,8 @@
+*.asv
+*.m~
+images/
+*.db
+*.swp
+mex/barrel/benchmark/
+*.mexmaci64
+.DS_Store

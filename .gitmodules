@@ -1,0 +1,15 @@
+[submodule "auxiliaryMethods/json/json-c"]
+	path = auxiliaryMethods/json/json-c
+	url = https://github.com/json-c/json-c.git
+[submodule "auxiliaryMethods/wkw"]
+	path = auxiliaryMethods/wkw
+	url = https://github.com/scalableminds/webknossos-wrap.git
+[submodule "warping/bigwarp"]
+	path = warping/bigwarp
+	url = https://github.com/saalfeldlab/bigwarp.git
+[submodule "auxiliaryMethods/jsonlab"]
+	path = auxiliaryMethods/jsonlab
+	url = https://github.com/fangq/jsonlab.git
+[submodule "auxiliaryMethods/export_fig"]
+	path = auxiliaryMethods/export_fig
+	url = https://github.com/altmany/export_fig.git
