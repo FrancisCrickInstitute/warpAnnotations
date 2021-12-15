@@ -15,7 +15,6 @@ C525a-18_translationAffine, 10, 10, 40
 C525a-20_translationAffine, 10, 10, 40
 C556_versaCT, 4009, 4009, 4009
 C556_DIAMOND_f, 330, 330, 330
-C556_cubedNormalized2, 330, 330, 330
 C556-00_translation, 80, 80, 50
 C556-01_translationAffine, 10, 10, 50
 C556-02_translationAffine, 10, 10, 50
@@ -27,9 +26,3 @@ C557_versaCT, 3701, 3701, 3701
 C557_DIAMOND_4f, 330, 330, 330
 C555_versaCT, 4005, 4005, 4005
 C555_DIAMOND_2f, 330, 330, 330
-C432_inVivoHiRes, 358, 358, 5000
-C432_versaCT, 3907, 3907, 3907
-C432_DIAMOND_2f, 330, 330, 330
-C432_TOMCAT-Pag, 325, 325, 325
-C432_trim2_versaCT, 3837, 3837, 3837
-C432_2pEV, 1074, 1074, 5000
