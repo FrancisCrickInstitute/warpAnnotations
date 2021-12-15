@@ -71,7 +71,7 @@ Note that using the latter approach you will also have to manually run `startup.
 
 [Read more](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) about adding to your static Java path.
 
-## Usage
+## Usage: creating new correlative experiments
 
 ### Define the scale of each dataset in `warping/data/datasets.csv`
 
@@ -94,6 +94,16 @@ The parameters specify the following properties:
 This should then warp the skeleton to the other dataset and back to the original dataset (should be identical to the original one) as a sanity test.
 If you have specified multiple transformations you can try running multiple transformations at once as well using the `warps` function.
 Now you should be all set to transform skeletons between different webKnossos datasets as you please!
+
+## Usage: revisiting the correlative experiments shared with this repository
+
+The following annotations, reported in this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1), are available to explore:
+|measurement|figures|dataset|annotations|link|
+---
+|apical dendrite tracing in SXRT: olfactory bulb| Fig. 3 | C525_SXRT | somata EM/SXRT (50 cells); EM traces (consensus); SXRT traces (3x tracers) | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600f1c380100006f00ba75f1?token=vBsay1ZVoTka3b8p5vZTsw#3706,1073,2239,0,3.079)|
+|multiscale dendritic spine analysis | Fig. 5, SuppF7 | C556_SBEMhr | somata EM/SXRT; SXRT traces; SBEM_hr dendrite-spine traces | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600f1b760100008900ba75ee?token=aKyXpXCrGEp8YEaOL1GWfg#3243,5183,190,0,2.420,20135)| 
+|multimodal olfactory bulb glomerular imaging | Fig. 6; SuppF8; SuppF9 | C525a joint EM/2p | glomeruli 2p_iv; glomeruli_SBEMlr | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600ef5a2010000d100563037?token=7g6jJNXHYtaUi72ABXrkuQ#8614,6129,2715,0,23.225,759)|
+
 
 ## Questions and feedback
 
