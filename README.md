@@ -95,15 +95,23 @@ This should then warp the skeleton to the other dataset and back to the original
 If you have specified multiple transformations you can try running multiple transformations at once as well using the `warps` function.
 Now you should be all set to transform skeletons between different webKnossos datasets as you please!
 
-## Usage: revisiting the correlative experiments shared with this repository
+## Usage: revisiting correlative experiments
 
-The following annotations, reported in this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1), are available to explore:
+The following correlative multimodal annotations, reported in this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1), are available to explore:
 | measurement | figures | dataset | annotations | link |
 | --- | --- | --- | --- | --- |
-|apical dendrite tracing in SXRT: olfactory bulb| Fig. 3 | C525_SXRT | somata EM/SXRT (50 cells); EM traces (consensus); SXRT traces (3x tracers) | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600f1c380100006f00ba75f1?token=vBsay1ZVoTka3b8p5vZTsw#3706,1073,2239,0,3.079)|
-|multiscale dendritic spine analysis | Fig. 5, SuppF7 | C556_SBEMhr | somata EM/SXRT; SXRT traces; SBEM_hr dendrite-spine traces | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600f1b760100008900ba75ee?token=aKyXpXCrGEp8YEaOL1GWfg#3243,5183,190,0,2.420,20135)| 
-|multimodal olfactory bulb glomerular imaging | Fig. 6; SuppF8; SuppF9 | C525a joint EM/2p | glomeruli 2p_iv; glomeruli_SBEMlr | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600ef5a2010000d100563037?token=7g6jJNXHYtaUi72ABXrkuQ#8614,6129,2715,0,23.225,759)|
+|apical dendrite tracing in SXRT: olfactory bulb| Fig. 3 | C525_SXRT | somata EM/SXRT (50 cells), EM traces (consensus), SXRT traces (3x tracers) | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600f1c380100006f00ba75f1?token=vBsay1ZVoTka3b8p5vZTsw#3706,1073,2239,0,3.079)|
+|multiscale dendritic spine analysis | Fig. 5, SuppF7 | C556_SBEMhr | somata EM/SXRT, SXRT traces, SBEM_hr dendrite-spine traces | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600f1b760100008900ba75ee?token=aKyXpXCrGEp8YEaOL1GWfg#3243,5183,190,0,2.420,20135)| 
+|multimodal olfactory bulb glomerular imaging | Fig. 6, SuppF8, SuppF9 | C525a joint EM/2p | glomeruli 2p_iv, glomeruli_SBEMlr | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600ef5a2010000d100563037?token=7g6jJNXHYtaUi72ABXrkuQ#8614,6129,2715,0,23.225,759)|
 
+The following correlative experiments are available:
+| specimen | species | age (w) | gender | location | figures | datasets |
+| --- | --- | --- | --- | --- | --- | --- | 
+| C525 | mouse | 10 | male | left hemisphere, olfactory bulb, first dorsal slice | 1, 2, 3, 6, 7, SuppF1, SuppF2, SuppF3, SuppF5, SuppF6, SuppF8, SuppF9 | 2p_iv (M72), 2p_ev (M72 and MOR174/9), LXRT, SXRT, SBEM_lr (M72 and MOR174/9), SBEM_hr (M72) |
+| C543 | mouse | 10 | male | coronal slice, cortex and striatum | 5, SuppF1 | LXRT, SXRT |
+| C555 | mouse | 10 | male | coronal slice, cortex and anterior hippocampus | 5, SuppF1 | LXRT, SXRT |
+| C556 | mouse | 10 | male | coronal slice, cortex and medial hippocampus | 2, 4, SuppF1, SuppF5, SuppF7 | LXRT, SXRT, SBEMlr, SBEMhr |
+| C557 | mouse | 10 | male | coronal slice, cerebellum | 5, SuppF1 | LXRT, SXRT |
 
 ## Questions and feedback
 
