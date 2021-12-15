@@ -104,7 +104,7 @@ The following correlative multimodal annotations, reported in this [paper](https
 |multiscale dendritic spine analysis | Fig. 5, SuppF7 | C556_SBEMhr | somata EM/SXRT, SXRT traces, SBEM_hr dendrite-spine traces | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600f1b760100008900ba75ee?token=aKyXpXCrGEp8YEaOL1GWfg#3243,5183,190,0,2.420,20135)| 
 |multimodal olfactory bulb glomerular imaging | Fig. 6, SuppF8, SuppF9 | C525a joint EM/2p | glomeruli 2p_iv, glomeruli_SBEMlr | [wk_scene](https://webknossos.crick.ac.uk/annotations/Explorational/600ef5a2010000d100563037?token=7g6jJNXHYtaUi72ABXrkuQ#8614,6129,2715,0,23.225,759)|
 
-The following correlative experiments are available:
+The following correlative experiments are available to explore (links to the datasets [here](https://github.com/FrancisCrickInstitute/skeletonWarping/blob/main/warping/data/datasets.csv)):
 | specimen | species | age (w) | gender | location | figures | datasets |
 | --- | --- | --- | --- | --- | --- | --- | 
 | C525 | mouse | 10 | male | left hemisphere, olfactory bulb, first dorsal slice | 1, 2, 3, 6, 7, SuppF1, SuppF2, SuppF3, SuppF5, SuppF6, SuppF8, SuppF9 | 2p_iv (M72), 2p_ev (M72 and MOR174/9), LXRT, SXRT, SBEM_lr (M72 and MOR174/9), SBEM_hr (M72) |
