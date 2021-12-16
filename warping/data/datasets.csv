@@ -1,5 +1,5 @@
 dataset, scale_x, scale_y, scale_z, link
-C525a_inVivoHiRes, 358, 358, 5000, `[wk_link](https://webknossos.crick.ac.uk/datasets/Schaefer_Lab/C525a_inVivoHiRes/view?token=Eku5LkpqlvD6IFIZojgnAw#%7B%22position%22:%5B648,780,19%5D,%22mode%22:%22orthogonal%22,%22zoomStep%22:3.065%7D)`
+C525a_inVivoHiRes, 358, 358, 5000, [wk_link](https://webknossos.crick.ac.uk/datasets/Schaefer_Lab/C525a_inVivoHiRes/view?token=Eku5LkpqlvD6IFIZojgnAw#%7B%22position%22:%5B648,780,19%5D,%22mode%22:%22orthogonal%22,%22zoomStep%22:3.065%7D)
 C525a_2pFix, 1074, 1074, 5000, [wk_link](https://webknossos.crick.ac.uk/datasets/Schaefer_Lab/C525a_2pFix/view?token=GLK_jT-BYq3MiLbxZzck8g#%7B%22position%22:%5B448,473,10%5D,%22mode%22:%22orthogonal%22,%22zoomStep%22:1.3%7D)
 C525b_2pFix, 1074, 1074, 5000, [wk_link](https://webknossos.crick.ac.uk/datasets/Schaefer_Lab/C525b_2pFix/view?token=mQGoC3IpQZ2Ba7U1vLvDfA#%7B%22position%22:%5B454,258,19%5D,%22mode%22:%22orthogonal%22,%22zoomStep%22:1.3%7D)
 C525_versaCT, 4049, 4049, 4049, [wk_link](https://webknossos.crick.ac.uk/datasets/Schaefer_Lab/C525_versaCT/view?token=rBZHxn4r0i8gfVigvYhJRw#%7B%22position%22:%5B496,507,500%5D,%22mode%22:%22orthogonal%22,%22zoomStep%22:1.3%7D)
