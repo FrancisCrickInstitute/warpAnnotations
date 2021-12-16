@@ -4,7 +4,7 @@
 
 ## Purpose of this repository
 
-The repository is released with this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1).
+The repository is released with this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1).  
 In case you would like to investigate the repo at state of publication, please check [here](https://github.com/FrancisCrickInstitute/warpAnnotations/tree/paper_release).
 
 The main purpose is to make the transformations between the multiple imaging datasets of a single piece of tissue 
