@@ -1,0 +1,13 @@
+[submodule "json/json-c"]
+	path = auxiliaryMethods/json/json-c
+	url = https://github.com/json-c/json-c.git
+    	ignore = dirty # do not show include/* lib/* files
+[submodule "jsonlab"]
+	path = auxiliaryMethods/jsonlab
+	url = https://github.com/fangq/jsonlab.git
+[submodule "wkw"]
+	path = auxiliaryMethods/wkw
+	url = https://github.com/scalableminds/webknossos-wrap.git
+[submodule "export_fig"]
+	path = auxiliaryMethods/export_fig
+	url = https://github.com/altmany/export_fig.git
