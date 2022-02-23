@@ -30,7 +30,7 @@ git submodule update --recursive
 Otherwise clone the repository:
 
 ```
-git clone git@github.com:FrancisCrickInstitute/skeletonWarping.git --recursive
+git clone git@github.com:FrancisCrickInstitute/warpAnnotations.git --recursive
 ```
 
 ### 2. Install Java and Maven
