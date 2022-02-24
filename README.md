@@ -67,10 +67,10 @@ The command will automatically replace all `:` separators with a newline `\n` ch
 Add the  full path to the `warping` as well as the `warping/bigwarp/target/classes` subfolders at the top of that same `javaclasspath.txt` file.
 The former contains a small wrapper script to use the bigwarp functionality from Matlab and the latter contains the classes generated using `mvn compile` in the bigwarp directory.
 
-Place it either in the top level of the repo (and start Matlab from there during usage) or in your
-[prefdir](https://uk.mathworks.com/help/matlab/ref/prefdir.html?searchHighlight=prefdir&s_tid=srchtitle_prefdir_1)
-to make the functionality availible in Matlab permanently.
-Note that using the latter approach you will also have to manually run `startup.m` from this repo after starting MATLAB.
+Move the file `javaclasspath.txt` either to the top level of the repo under `matlab-pipeline/` (and start Matlab from there during usage) or to your
+[Matlab's `prefdir`](https://uk.mathworks.com/help/matlab/ref/prefdir.html?searchHighlight=prefdir&s_tid=srchtitle_prefdir_1)
+to make the functionality available in Matlab permanently.
+Note that if using the latter approach you will also have to manually run `startup.m` from this repo every time after starting MATLAB.
 
 [Read more](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) about adding to your static Java path.
 
