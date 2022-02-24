@@ -45,6 +45,14 @@ module load Maven/3.6.0
 You can otherwise install Java and Maven using the following resources:
 
 * Install Java 1.8 from e.g. [here](https://openjdk.java.net/install/) or [here](https://www.java.com/de/download/manual.jsp)
+
+If opting for `jdk`, this would do the job (more info [here](https://devqa.io/brew-install-java/)):
+```
+brew tap adoptopenjdk/openjdk
+
+brew install adoptopenjdk8
+```
+
 * Download [Maven](https://maven.apache.org/download.cgi) and follow the [installation instructions](https://maven.apache.org/install.html)
 
 
