@@ -78,7 +78,7 @@ The former contains a small wrapper script to use the bigwarp functionality from
 Move the file `javaclasspath.txt` either to the top level of the repo under `matlab-pipeline/` (and start Matlab from there during usage) or to your
 [Matlab's `prefdir`](https://uk.mathworks.com/help/matlab/ref/prefdir.html?searchHighlight=prefdir&s_tid=srchtitle_prefdir_1)
 to make the functionality available in Matlab permanently.
-Note that if using the latter approach you will also have to manually run `startup.m` from this repo every time after starting MATLAB.
+Note that if using the second approach you will also have to manually run `startup.m` from this repo every time at the beginning of your MATLAB session.
 
 [Read more](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) about adding to your static Java path.
 
