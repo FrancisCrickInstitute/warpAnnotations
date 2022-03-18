@@ -60,7 +60,7 @@ And set `JAVA_HOME` path to its installed location.
 # update JAVA_PATH with the output of the previous command, such as
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home"
 ```
-This JAVA_PATH can be stated permanently to all your `zsh` sessions by adding that last command into your `~/.zshrc` file.
+This `JAVA_HOME` path can be stated permanently to all your `zsh` sessions by adding that last command into your `~/.zshrc` file.
 
 * Download [Maven](https://maven.apache.org/download.cgi) and follow the [installation instructions](https://maven.apache.org/install.html)
 
