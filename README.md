@@ -58,7 +58,7 @@ And set `JAVA_HOME` path to its installed location.
 # obtain the path to the temurin installation
 /usr/libexec/java_home -v 1.8.0_322
 # update JAVA_PATH with the output of the previous command, such as
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home"
 ```
 This JAVA_PATH can be stated permanently to all your `zsh` sessions by adding that last command into your `~/.zshrc` file.
 
