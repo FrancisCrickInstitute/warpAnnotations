@@ -48,9 +48,7 @@ You can otherwise install Java and Maven using the following resources:
 
 If opting for `jdk`, this would do the job (more info [here](https://devqa.io/brew-install-java/)):
 ```
-brew tap adoptopenjdk/openjdk
-
-brew install adoptopenjdk8
+brew install --cask temurin
 ```
 
 * Download [Maven](https://maven.apache.org/download.cgi) and follow the [installation instructions](https://maven.apache.org/install.html)
