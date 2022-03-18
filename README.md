@@ -48,8 +48,19 @@ You can otherwise install Java and Maven using the following resources:
 
 If opting for `jdk`, this would do the job (more info [here](https://devqa.io/brew-install-java/)):
 ```
-brew install --cask temurin
+brew tap homebrew/cask-versions
+brew install --cask temurin8
 ```
+And set `JAVA_HOME` path to its installed location.
+```
+# list all java installations
+/usr/libexec/java_home -V
+# obtain the path to the temurin installation
+/usr/libexec/java_home -v 1.8.0_322
+# update JAVA_PATH with the output of the previous command, such as
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home
+```
+This JAVA_PATH can be stated permanently to all your `zsh` sessions by adding that last command into your `~/.zshrc` file.
 
 * Download [Maven](https://maven.apache.org/download.cgi) and follow the [installation instructions](https://maven.apache.org/install.html)
 
