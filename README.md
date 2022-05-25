@@ -117,7 +117,7 @@ Now you should be all set to transform skeletons between different webKnossos da
 
 ## Usage: revisiting correlative experiments
 
-The following correlative multimodal annotations, reported in this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1), are available to explore:
+The following correlative multimodal annotations, reported in this [paper](https://www.nature.com/articles/s41467-022-30199-6), are available to explore:
 | measurement | figures | dataset | annotations | link |
 | --- | --- | --- | --- | --- |
 |apical dendrite tracing in SXRT: olfactory bulb| Fig. 3 | C525_SXRT | somata EM/SXRT (50 cells), EM traces (consensus), SXRT traces (3x tracers) | [wk_scene](https://wklink.org/2530)|
