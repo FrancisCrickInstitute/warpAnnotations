@@ -4,7 +4,7 @@
 
 ## Purpose of this repository
 
-This repository is released with this [paper](https://www.biorxiv.org/content/10.1101/2021.01.13.426503v1).  
+This repository is released with this [paper](https://www.nature.com/articles/s41467-022-30199-6).  
 In case you would like to investigate the repo at state of publication, please check [here](https://github.com/FrancisCrickInstitute/warpAnnotations/tree/paper_release).
 
 The main purpose of this repository is to enable warping spatial annotations between correlated volume datasets of the same specimen that have been acquired with different imaging modalities. 
