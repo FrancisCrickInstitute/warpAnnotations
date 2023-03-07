@@ -24,3 +24,4 @@ C543_versaCT,1,1,1,0,0,0,988,1015,1001,0,0,1, C543_DIAMOND_3f,4,4,4,0,0,0,1102,1
 C557_versaCT,1,1,1,0,0,0,993,1015,1866,0,0,1, C557_DIAMOND_4f,4,4,4,0,0,0,643,795,1005,0,0,0, C557_versaZrev_to_sxrmag4_landmarks_cb_SXRTsc325nm.csv,1
 C555_versaCT,1,1,1,0,0,0,988,1015,1001,0,0,1, C555_DIAMOND_2f,4,4,4,0,0,0,643,912,1938,0,0,0, C555_versaCTzRev_to_sxrmag4_landmarks_cb_SXRTsc325nm.csv,1
 C525a_inVivoHiRes,1,1,1,0,0,0,1296,1536,88,0,0,1, C525_DIAMOND_5u,1,1,1,3630,0,4700,3000,2420,3400,0,0,0, C525a_2p2sxr_YZ_09_SXRTsc325nm.csv,1
+C417_A_ID19_wobble_test,1,1,1,0,0,0,1051,2000,2000,0,0,1, C417_versaCT,1,1,1,0,0,0,992,1015,1005,0,0,0, C417_A_wobbleTest_zRev_mag1_to_versaCT_CB.csv,1
