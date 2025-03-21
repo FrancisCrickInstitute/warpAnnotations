@@ -3,22 +3,34 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6342309.svg)](https://doi.org/10.5281/zenodo.6342309)
 
 
-## Purpose of this repository
+### Purpose 
 
-This repository is released with this [paper](https://www.nature.com/articles/s41467-022-30199-6).  
+This repository was released with this [paper](https://www.nature.com/articles/s41467-022-30199-6) and is periodically updated with new correlative multimodal imaging studies.
+
 In case you would like to investigate the repo at state of publication, please check [here](https://github.com/FrancisCrickInstitute/warpAnnotations/tree/paper_release).
 
-The main purpose of this repository is to enable warping spatial annotations between correlated volume datasets of the same specimen that have been acquired with different imaging modalities. 
+These are the studies currently supported by data in this repository:
+```
+Bosch, C., Ackels, T., Pacureanu, A., Zhang, Y., Peddie, C. J., Berning, M., Rzepka, N., Zdora, M. C., Whiteley, I., Storm, M., Bonnin, A., Rau, C., Margrie, T., Collinson, L. & Schaefer, A. T. Functional and multiscale 3D structural investigation of brain tissue through correlative in vivo physiology, synchrotron microtomography and volume electron microscopy. Nature communications 13, 2923, [doi:10.1038/s41467-022-30199-6](https://doi.org/10.1038/s41467-022-30199-6) (2022).
 
-A first purpose of this repository is enabling everyone to explore and reproduce annotations reported in the publication. This application is addressed by including the parameters of the correlative experiments described there.
+Zhang, Y., Ackels, T., Pacureanu, A., Zdora, M. C., Bonnin, A., Schaefer, A. T. & Bosch, C. Sample Preparation and Warping Accuracy for Correlative Multimodal Imaging in the Mouse Olfactory Bulb Using 2-Photon, Synchrotron X-Ray and Volume Electron Microscopy. Front Cell Dev Biol 10, 880696, [doi:10.3389/fcell.2022.880696](https://doi.org/10.3389/fcell.2022.880696) (2022).
 
-A second purpose of this repository is to allow interested individuals to use, adapt or extend this solution to their needs/datasets/formats. This application is addressed by providing the codebase and instructions for installation and usage.
+Bosch, C., Lindenau, J., Pacureanu, A., Peddie, C. J., Majkut, M., Douglas, A. C., Carzaniga, R., Rack, A., Collinson, L., Schaefer, A. T. & Stegmann, H. Femtosecond laser preparation of resin embedded samples for correlative microscopy workflows in life sciences. Applied Physics Letters 122, 143701, [doi:10.1063/5.0142405](https://doi.org/10.1117/12.3028309) (2023).
+
+```
+
+The goal of this repository is to enable warping spatial annotations between correlated volume datasets of the same specimen that have been acquired with different imaging modalities. 
+
+This goal is reached by two applications:
+1. To enable everyone to explore and reproduce annotations reported in our published studies. This application is addressed by including in this repo the parameters defining the correlative experiments described in those studies.
+
+2. To allow interested individuals to use, adapt or extend this tool to their needs/datasets/formats. This application is addressed by providing the codebase and instructions for installation and usage.
 
 The transformations were fitted in [bigwarp](https://github.com/saalfeldlab/bigwarp) and executed using the code in this repository.
 
-## Installation
+### Installation
 
-### 1. Get latest version of this repo
+#### 1. Get latest version of this repo
 
 If you already have the repository on a given computer, check whether you got the latest version:
 
@@ -34,7 +46,7 @@ Otherwise clone the repository:
 git clone git@github.com:FrancisCrickInstitute/warpAnnotations.git --recursive
 ```
 
-### 2. Install Java and Maven
+#### 2. Install Java and Maven
 
 Note: On a given HPC cluster with the module command you might be able to just load these dependencies:
 
@@ -66,7 +78,7 @@ This `JAVA_HOME` path can be stated permanently to all your `zsh` sessions by ad
 * Download [Maven](https://maven.apache.org/download.cgi) and follow the [installation instructions](https://maven.apache.org/install.html)
 
 
-### 3. Compile bigwarp and get its dependencies using maven
+#### 3. Compile bigwarp and get its dependencies using maven
 
 Go to the `bigwarp` folder in your repo, e.g.: `cd warping/bigwarp` and compile it:
 
@@ -92,13 +104,17 @@ Note that if using the second approach you will also have to manually run `start
 
 [Read more](https://uk.mathworks.com/help/matlab/matlab_external/static-path-of-java-class-path.html) about adding to your static Java path.
 
-## Usage: creating new correlative experiments
+### Use case: creating new correlative experiments
 
-### Define the scale of each dataset in `warping/data/datasets.csv`
+#### Define the datasets (nodes)
 
-The scale is specified in `nm` for each dimension.
+Define the name and scale of each dataset in `warping/data/datasets.csv`
 
-### Define the parameters for each transformation between datasets in `warping/data/warpings.csv`
+The scale should be specified in `nm` for each dimension.
+
+#### Define the warp relationships between datasets (edges)
+
+Define the parameters for each transformation between datasets in `warping/data/warpings.csv`
 
 The parameters specify the following properties:
 
@@ -110,13 +126,21 @@ The parameters specify the following properties:
 - The `landmark` parameter specifies a csv file with landmarks exported from bigwarp to be placed in the `warping/data/landmarks` folder
 - The `weight` parameter is used if a chain of transformations is to be traversed to decide which path to take by default (the one with lowest weight)
 
-### Use a skeleton to test the warping by running a specific chain of transformations as exemplified in `warping/test_run.m`
+#### Unit test
+
+Use a skeleton to test the warping by running a specific chain of transformations as exemplified in `warping/test_run.m`
 
 This should then warp the skeleton to the other dataset and back to the original dataset (should be identical to the original one) as a sanity test.
 If you have specified multiple transformations you can try running multiple transformations at once as well using the `warps` function.
 Now you should be all set to transform skeletons between different webKnossos datasets as you please!
 
-## Usage: revisiting correlative experiments
+### Usage: revisiting correlative experiments
+
+You will find below some example scenes released with the original [paper](https://www.nature.com/articles/s41467-022-30199-6). 
+
+For scenes related to more recent studies supported by this tool, check the specific analysis code repositories released alongside those studies. 
+
+#### Scenes from published studies
 
 The following correlative multimodal annotations, reported in this [paper](https://www.nature.com/articles/s41467-022-30199-6), are available to explore:
 | measurement | figures | dataset | annotations | link |
@@ -134,7 +158,13 @@ The following correlative experiments are available to explore (links to the dat
 | C556 | mouse | 10 | male | coronal slice, cortex and medial hippocampus | 4, SuppF1, SuppF3, SuppF4, SuppF9 | LXRT, SXRT, SBEMlr, SBEMhr |
 | C557 | mouse | 10 | male | coronal slice, cerebellum | 5, SuppF1 | LXRT, SXRT |
 
-## Questions and feedback
+
+### Questions and feedback
+
+To cite this repository, please quote the original study it was released with: 
+```
+Bosch, C., Ackels, T., Pacureanu, A., Zhang, Y., Peddie, C. J., Berning, M., Rzepka, N., Zdora, M. C., Whiteley, I., Storm, M., Bonnin, A., Rau, C., Margrie, T., Collinson, L. & Schaefer, A. T. Functional and multiscale 3D structural investigation of brain tissue through correlative in vivo physiology, synchrotron microtomography and volume electron microscopy. Nature communications 13, 2923, [doi:10.1038/s41467-022-30199-6](https://doi.org/10.1038/s41467-022-30199-6) (2022).
+```
 
 If you have any questions please contact us: [Manuel Berning](mailto:manuel.berning@crick.ac.uk) or [Carles Bosch](mailto:carles.bosch@crick.ac.uk)
 
