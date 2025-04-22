@@ -11,12 +11,17 @@ In case you would like to investigate the repo at state of publication, please c
 
 These are the studies currently supported by data in this repository:
 ```
-Bosch, C., Ackels, T., Pacureanu, A., Zhang, Y., Peddie, C. J., Berning, M., Rzepka, N., Zdora, M. C., Whiteley, I., Storm, M., Bonnin, A., Rau, C., Margrie, T., Collinson, L. & Schaefer, A. T. Functional and multiscale 3D structural investigation of brain tissue through correlative in vivo physiology, synchrotron microtomography and volume electron microscopy. Nature communications 13, 2923, [doi:10.1038/s41467-022-30199-6](https://doi.org/10.1038/s41467-022-30199-6) (2022).
+Bosch, C., Ackels, T., Pacureanu, A., Zhang, Y., Peddie, C. J., Berning, M., Rzepka, N., Zdora, M. C., Whiteley, I., Storm, M., Bonnin, A., Rau, C., Margrie, T., Collinson, L. & Schaefer, A. T.
+Functional and multiscale 3D structural investigation of brain tissue through correlative in vivo physiology, synchrotron microtomography and volume electron microscopy.
+Nature communications 13, 2923,
+[doi:10.1038/s41467-022-30199-6](https://doi.org/10.1038/s41467-022-30199-6) (2022).
 
-Zhang, Y., Ackels, T., Pacureanu, A., Zdora, M. C., Bonnin, A., Schaefer, A. T. & Bosch, C. Sample Preparation and Warping Accuracy for Correlative Multimodal Imaging in the Mouse Olfactory Bulb Using 2-Photon, Synchrotron X-Ray and Volume Electron Microscopy. Front Cell Dev Biol 10, 880696, [doi:10.3389/fcell.2022.880696](https://doi.org/10.3389/fcell.2022.880696) (2022).
+Zhang, Y., Ackels, T., Pacureanu, A., Zdora, M. C., Bonnin, A., Schaefer, A. T.# & Bosch, C.#
+Sample Preparation and Warping Accuracy for Correlative Multimodal Imaging in the Mouse Olfactory Bulb Using 2-Photon, Synchrotron X-Ray and Volume Electron Microscopy. Front Cell Dev Biol 10, 880696, [doi:10.3389/fcell.2022.880696](https://doi.org/10.3389/fcell.2022.880696) (2022).
 
-Bosch, C., Lindenau, J., Pacureanu, A., Peddie, C. J., Majkut, M., Douglas, A. C., Carzaniga, R., Rack, A., Collinson, L., Schaefer, A. T. & Stegmann, H. Femtosecond laser preparation of resin embedded samples for correlative microscopy workflows in life sciences. Applied Physics Letters 122, 143701, [doi:10.1063/5.0142405](https://doi.org/10.1117/12.3028309) (2023).
-
+Bosch, C.*, Lindenau, J.*, Pacureanu, A., Peddie, C. J., Majkut, M., Douglas, A. C., Carzaniga, R., Rack, A., Collinson, L., Schaefer, A. T.# & Stegmann, H.#
+Femtosecond laser preparation of resin embedded samples for correlative microscopy workflows in life sciences.
+Applied Physics Letters 122, 143701, [doi:10.1063/5.0142405](https://doi.org/10.1117/12.3028309) (2023).
 ```
 
 The goal of this repository is to enable warping spatial annotations between correlated volume datasets of the same specimen that have been acquired with different imaging modalities. 
